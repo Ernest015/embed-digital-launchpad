@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Copy, Check, Mail, ArrowLeft } from "lucide-react";
+import { Copy, Check, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
 
@@ -26,14 +26,6 @@ const Contact = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] sm:w-[280px] md:w-[350px] lg:w-[400px] h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px] bg-accent/5 rounded-full blur-[60px] sm:blur-[80px] lg:blur-[100px] animate-glow-pulse animation-delay-300" />
       </div>
 
-      {/* Back button */}
-      <Link
-        to="/"
-        className="absolute top-6 left-6 sm:top-8 sm:left-8 font-poppins glass-button p-2.5 sm:p-3 rounded-full text-foreground/80 hover:text-foreground transition-colors z-20"
-        aria-label="Back to home"
-      >
-        <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
-      </Link>
 
       {/* Content container */}
       <div className="relative z-10 flex flex-col items-center gap-6 sm:gap-8 md:gap-10 w-full max-w-lg md:max-w-xl lg:max-w-2xl">
