@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import embedLogo from "@/assets/embed-digital-logo.png";
 
 const Index = () => {
@@ -25,13 +26,13 @@ const Index = () => {
           Crafting Intelligent Digital Presence
         </p>
 
-        {/* Contact button */}
-        <a
-          href="mailto:ernest.carwalho@embeddigital.in"
+        {/* Contact button - links to contact page */}
+        <Link
+          to="/contact"
           className="font-poppins glass-button px-6 py-2.5 sm:px-8 sm:py-3 md:px-10 md:py-3.5 rounded-full text-xs sm:text-sm md:text-base font-medium text-foreground/90 tracking-wide animate-fade-in-up opacity-0 animation-delay-900 touch-manipulation active:scale-95 transition-transform"
         >
           Contact Us
-        </a>
+        </Link>
       </div>
     </main>
   );
